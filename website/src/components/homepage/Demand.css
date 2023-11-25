@@ -1,0 +1,61 @@
+.demand-page{
+    width: 100%;
+    background: rgb(174,238,238);
+    background: radial-gradient(circle, rgba(174, 238, 238, 0.79) 0%, rgba(184, 222, 243, 0.821) 18%, rgba(208, 184, 255, 0.777) 100%);
+}
+
+/*  here heading and paragraph get flex effect */
+.last-time{
+    margin-top: -20px;
+    margin-right: 20px;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+}
+.demand-flex{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px;
+}
+.text
+.demand-flex > h1{
+    font-size: 40px;
+}
+.demand-flex2{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* laptop image code  */
+
+.laptop{
+    margin-top: 30px;
+    height: 500px;
+    margin: 30px;
+}
+.column{
+    flex-direction: vertical;
+}
+.column > h2{
+    line-height: 2px;
+}
+.text-h{
+    line-height: 1.3;
+}
+.text-p{
+    font-size: 20px;
+}
+.col{
+    background-color: rgba(255, 253, 253, 0);
+    width: 150px;
+    margin: 20px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.col >  p{
+    padding: 10px;
+
+}

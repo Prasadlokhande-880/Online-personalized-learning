@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+
+.hide{
+  font-size: 13px;
+  width: 50px;
+  border: solid black 1px ;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(3, 50, 131);
+  color: #ccc;
+  margin: 10px;
+}
+
+.login_main_body{
+    display: flex;
+    background-color:aliceblue;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    width: 80%;
+  margin: auto;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .login_heading{
+    font-size: 30px;
+    color:  rgb(3, 50, 131);
+    font-weight: 900;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .login_sub{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+  }
+
+  .form input{
+    display: block;
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+
+  .form button,.sign_up {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color:rgb(39,91,195);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form button:hover ,.sign_up:hover{
+    background-color:rgb(24, 67, 153);
+  }
+
+  label{
+     font-size: 16px;
+     font-weight: 600;
+     margin: 10px;
+  }
+  /* this is the code for the  */
+
+  .swiper {
+      width: 500px;
+      height: 500px;
+      border-radius: 20px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .sign_up_link{
+      font-size: 16px;
+      position: absolute;
+      margin: 30px;
+      font-weight: 500;
+    }
+
+    .sign_up_link a{
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .sign_up_link a:hover{
+      text-decoration: underline;
+    }
+    #username{
+      width: 100%;
+    }
+    @media screen and (max-width: 1000px){
+      .Swiper{
+        display: none;
+      }
+      .sign_up_link{
+       margin: 0px;
+      }
+  }
+
+  @media screen and (max-width: 440px){
+    .form{
+      height: 450px;
+    }
+  }

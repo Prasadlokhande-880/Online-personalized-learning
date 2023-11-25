@@ -1,0 +1,61 @@
+/* VideoCard.css */
+
+.videoCard {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .videoCard__thumbnail {
+    width: 60%;
+    object-fit: cover;
+  }
+
+  .videoCard_info {
+    display: flex;
+    padding: 15px;
+    width: 60%;
+    box-sizing: border-box;
+  }
+
+  .videoCard__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .videoCard__text {
+    flex: 1;
+    align-self: center;
+      }
+
+  .videoCard__text h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  .videoCard__text p {
+    margin: 0;
+    color: #606060;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .videoCard__text strong {
+    color: #000;
+  }
+
+  /* Styling the anchor tags for URLs */
+  .videoCard__text a {
+    text-decoration: none;
+    color: #065fd4;
+  }
+
+  .videoCard__text a:hover {
+    text-decoration: underline;
+  }

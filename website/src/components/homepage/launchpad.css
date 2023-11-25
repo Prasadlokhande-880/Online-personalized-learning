@@ -1,0 +1,62 @@
+/* section 4 code is here */
+
+.launchpad{
+    width: 96%;
+    height: 700px;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+.header3 > p{
+    padding: 20px;
+}
+.header3>h1{
+    color: #000000;
+    font-size: 50px;
+
+}
+.launchpad-flex{
+    align-items: center;
+    background: rgb(174,238,238);
+    background: radial-gradient(circle, rgba(174,238,238,1) 0%, rgba(208,184,255,0.9378428739659926) 0%, rgba(184,222,243,1) 100%);    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.launch > h1{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+.launch> p{
+    padding-top: 30px;
+}
+.launch > button{
+    margin-top: 30px;
+    height: 40px;
+    width: 100px;
+}
+.launch{
+    background-color: #ffffff;
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: left;
+
+
+}
+/* learn hover effect  */
+.learn{
+    margin: 20px;
+    border: solid gray 1px;
+    border-radius: 5px;
+    background-image: linear-gradient(#372dff,#372dff);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-out;
+}
+.learn:hover{
+    background-size: 100% 100%;
+}

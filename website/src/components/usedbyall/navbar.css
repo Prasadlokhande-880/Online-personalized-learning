@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#first-page{
+    margin-top: 100px;
+}
+
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans');
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    background: rgb(115, 185, 236);
+    background: linear-gradient(169deg, rgb(235, 250, 251) 0%, rgb(0, 125, 251) 100%);
+}
+
+/* navigation design start here */
+.nav {
+    overflow: hidden;
+    top: 0;
+}
+
+.web-name {
+    margin-left: 20px;
+    font-size: x-large;
+    color: #070000;
+    transition: all 0.4s ease;
+}
+
+.header, nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav section {
+    margin-left: 10px;
+}
+
+.nav-list li {
+    font-family: 'Poppins';
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 10px 2px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.list {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    font-size: x-large;
+}
+
+.nav-button{
+    margin: 5px;
+    padding: 5px;
+}
+/* underline effect starts here */
+.navy:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 3px;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navy:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* design id class for get started button */
+.design {
+    margin: 10px;
+    color: #000000;
+    display: inline;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+}
+
+.design:hover {
+    background-color: #ff51ff;
+    color: white;
+}
+
+.section1 .nav-button {
+    height: 60px;
+}
+
+/* image CSS is here and heading/text is here */
+.img1 {
+    width: 60%;
+    height: 40%;
+    margin-top: 0;
+    margin-left: 40%;
+}
+
+.heading {
+    position: absolute;
+    top: 300px;
+    margin: 20px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: #000000;
+    font-weight: 500;
+}

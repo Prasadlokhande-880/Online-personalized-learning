@@ -1,0 +1,49 @@
+.section6{
+    width: 100%;
+    height: 550px;
+    background-color: white;
+}
+.section6> h1{
+    font-size: 45px;
+    margin: 50px;
+    margin-top: 100px;
+    padding-left: 60px;
+}
+.online{
+    overflow: hidden;
+
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.background{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    width: 600px;
+    height: 300px;
+    background: rgb(174,238,238);
+    background: linear-gradient(93deg, rgba(174,238,238,1) 0%, rgba(247,243,255,0.9378428739659926) 0%, rgba(206,187,254,1) 51%, rgba(254,255,172,1) 100%);
+    box-shadow: 0 0 8px 1px #9b9b9b89;
+}
+.person-1{
+    z-index: 1;
+    margin: 100px;
+    margin-top: -350px;
+    margin-left:160px ;
+    width: 470px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 8px 1px #00000089;
+}
+.paragraph{
+    padding: 30px;
+    font-size: 18px;
+
+}
+.name{
+    margin-top: 30px;
+    font-size: 15px;
+}

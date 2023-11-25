@@ -1,0 +1,59 @@
+.section5{
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(to right bottom, #fffac8, #edfdd1, #deffdc, #d3ffe9, #cefef4, #cefcf9, #d0fafd, #d3f7ff, #d7f4ff, #e0f0ff, #ebecff, #f6e8ff);;
+}
+.section5{
+    display: flex;
+    justify-content: space-between;
+}
+/* unlock is common name for all block */
+
+.unlock{
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff86;
+    margin: 10px;
+    margin-top: 60px;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+.unlock > h2{
+    width: 40px;
+    height: 40px;
+    background-color: #372dff;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 15px;
+
+}
+.number{
+    /* margin-top:-20px ; */
+    position: relative;
+    top: -30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+}
+.unlock > h1{
+    padding-top: 20px;
+    color: #000000;
+    font-size: 25px;
+}
+
+.unlock > p{
+    padding: 20px;
+    padding-top: 40px;
+    line-height: 1.3;
+    font-size: 18x;
+
+}
+.unlock1{
+    background-color: transparent;
+    width: 400px;
+}
+.unlock1{
+    padding: 40px;
+}

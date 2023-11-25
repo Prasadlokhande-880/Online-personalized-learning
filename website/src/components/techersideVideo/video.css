@@ -1,0 +1,87 @@
+.App{
+  margin-top: 100px;
+}
+.VideoInput {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #8e8888;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 10px rgb(178, 176, 176);
+  margin-top: 100px;
+}
+
+#videoDescription{
+  height: 150px;
+}
+.VideoInput form {
+  margin-bottom: 20px;
+}
+
+.VideoInput label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.VideoInput input,
+.VideoInput textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.VideoInput button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.VideoInput button:hover {
+  background-color: #45a049;
+}
+
+.VideoInput_video {
+  margin-top: 20px;
+}
+
+.VideoInput_footer {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
+}
