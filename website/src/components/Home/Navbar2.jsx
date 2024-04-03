@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import img from './bird-colorful-gradient-design-vector_1023160-95.png'
+import "./Homescreen/index2.css"
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);

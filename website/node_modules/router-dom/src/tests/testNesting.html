@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Router Tests</title>
+    <script type="module">
+      import { hydro, $ } from "hydro-js";
+      import { runTests } from "@web/test-runner-mocha";
+      import { expect } from "@esm-bundle/chai";
+      import Router from "../../dist/router.js";
+
+      const sleep = (time) =>
+        new Promise((resolve) => setTimeout(resolve, time));
+
+      runTests(() => {
+        let router;
+
+        beforeEach(() => {
+          const UserSettingsNav = `<div class="us__nav">
+            <a href="/settings/emails">emails</a>
+            <br>
+            <a href="/settings/profile">profile</a>
+          </div>`;
+
+          const UserProfilePreview = `<div>
+              <h3>Preview of your profile</h3>
+          </div>`;
+
+          const UserSettings = `<div class="us">
+            <h2>User Settings</h2>
+            ${UserSettingsNav}
+            <div class="us__content">
+              <div data-outlet></div>  
+            </div>
+            <div class="us__content us__content--helper">
+              ${UserProfilePreview}
+            <div>
+          </div>`;
+
+          const UserEmailsSubscriptions = `<div>
+            <h3>Email Subscriptions</h3>
+          </div>`;
+
+          const UserProfile = `<div>
+            <h3>Edit your profile</h3>
+          </div>`;
+
+          router = new Router([
+            {
+              path: "/settings",
+              element: UserSettings,
+              children: [
+                {
+                  path: "emails",
+                  element: UserEmailsSubscriptions,
+                },
+                {
+                  path: "profile",
+                  element: UserProfile,
+                },
+              ],
+            },
+          ]);
+        });
+
+        describe("router", () => {
+          it("goes to the nested route", async () => {
+            router.go("/settings/emails");
+            await sleep(50);
+            expect($("body").textContent).to.include("Preview of your profile");
+
+            expect(location.pathname).to.equal("/settings/emails");
+            expect($("body").textContent).to.include("Email Subscriptions");
+
+            router.go("/settings/profile");
+            await sleep(50);
+            expect(location.pathname).to.equal("/settings/profile");
+            expect($("body").textContent).to.include("Edit your profile");
+
+            history.back();
+            await sleep(50);
+            expect(location.pathname).to.equal("/settings/emails");
+            expect($("body").textContent).to.include("Email Subscriptions");
+
+            $("#profile").click();
+            await sleep(50);
+            expect(location.pathname).to.equal("/settings/profile");
+            expect($("body").textContent).to.include("Edit your profile");
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a id="profile" href="/settings/profile">Profile</a>
+    <div data-outlet></div>
+  </body>
+</html>
